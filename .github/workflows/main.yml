@@ -5,6 +5,6 @@ on: push
 jobs:
   huhu:
     runs-on: ubuntu-latest
-    steps:
-    - name: echo huhu
-      run: echo huhu!
+    steps:  
+    - uses: actions/checkout@v2
+    - run: ls $GITHUB_WORKSPACE
